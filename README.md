@@ -48,8 +48,8 @@ Ensure that the file [paths.txt](src/paths.txt) specifies the absolute directory
 For starters, clone the repository:
 
 ```bash
-git clone git@github.com:DSIT-DB-Course/phase-3-implementation-darmanis_kotsis.git
-cd phase-3-implementation-darmanis_kotsis
+git git@github.com:staks1/Unsupervised-Partitioner-Extension.git
+cd ./Unsupervised-Partitioner-Extension/src 
 ```
 
 Before running the code, install the required dependencies by running the following command:
