@@ -1,5 +1,13 @@
 # SPECIFY PATHS AS ABSOLUTE PATHS
 
+# here substitute your own paths with the dataset .hdf5 files 
+# and comment out everything else depending on the dataset you want to train the model with/query 
+# As you see below the paths should have the following format 
+# for dataset hdf5 files --> path to .hdf5 file
+# for models,tensors,knn matrices --> .../models , .../tensors, .../data
+# with "/" for linux 
+# or with "\" if you are on windows 
+
 # SET UP FOR MICHAEL
 #path_to_mnist=C:\Users\qubit\Desktop\Neural-Partitioner\data\raw\mnist-784-euclidean.hdf5
 #path_to_fashion_mnist=C:\Users\qubit\Desktop\Neural-Partitioner\data\raw\fashion-mnist-784-euclidean.hdf5
@@ -12,9 +20,3 @@
 #path_to_tensors=C:\Users\qubit\Desktop\Neural-Partitioner\tensors
 
 
-# SET UP FOR STATHIS 
-path_to_mnist=/home/st_ko/Documents/environments/PyTorch/UnsuperVSpace/Neural-Partitioner/Neural-Partitioner/data_folder/reduced-mnist-784-euclidean.hdf5
-path_to_sift=/home/st_ko/Documents/environments/PyTorch/UnsuperVSpace/Neural-Partitioner/Neural-Partitioner/data_folder/sift-128-euclidean.hdf5
-path_to_knn_matrix=/home/st_ko/Documents/environments/PyTorch/UnsuperVSpace/Neural-Partitioner/Neural-Partitioner/data_folder
-path_to_models=/home/st_ko/Documents/environments/PyTorch/UnsuperVSpace/Neural-Partitioner/Neural-Partitioner/models
-path_to_tensors=/home/st_ko/Documents/environments/PyTorch/UnsuperVSpace/Neural-Partitioner/Neural-Partitioner/tensors
