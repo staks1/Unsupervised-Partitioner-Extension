@@ -1,0 +1,71 @@
+\begin{tikzpicture}
+\tikzstyle{connection}=[ultra thick,every node/.style={sloped,allow upside down},draw=\edgecolor,opacity=0.7]
+\tikzstyle{depthlabel}=[pos=0.5,text width=14*\z,text centered,sloped]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Draw Layer Blocks
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Conv1 + Relu
+\pic[shift={(0,0,0)}] at (0,0,0) {RightBandedBox={name=conv1,caption=Conv1,%
+        xlabel={{"26","26"}},zlabel=26,fill=\ConvColor,bandfill=\ConvReluColor,%
+        height=26,width={6},depth=26}};
+
+% MaxPool1
+\pic[shift={(0,0,0)}] at (conv1-east) {Box={name=maxpool1,zlabel=13,%
+        fill=\PoolColor,opacity=0.5,height=13,width={6},depth=13}};
+        
+% BatchNorm2d1
+\pic[shift={(2,0,0)}] at (maxpool1-east) {Box={name=batchnorm,caption=BatchNorm1,%
+        xlabel={{"6","6"}},fill=\DcnvColor, zlabel={{13}},%
+        height=13, width={6}, depth=13}};
+
+% Conv2 + Relu
+\pic[shift={(2,0,0)}] at (batchnorm-east) {RightBandedBox={name=conv2,caption=Conv2,%
+        xlabel={{"16","16"}},fill=\ConvColor, bandfill=\ConvReluColor,%
+        height=5,width={16},depth=5}};
+
+% MaxPool2
+\pic[shift={(0,0,0)}] at (conv2-east) {Box={name=maxpool2,caption=MaxPool2,zlabel=5,%
+        fill=\PoolColor,opacity=0.5,height=5,width={16},depth=5}};
+
+% Conv3 + Relu
+\pic[shift={(2,0,0)}] at (maxpool2-east) {RightBandedBox={name=conv3,caption=Conv3,%
+        xlabel={{"120","120"}},fill=\ConvColor,bandfill=\ConvReluColor,%
+        height=3,zlabel=3,width={120},depth=3}};
+
+% Linear1
+\pic[shift={(2,0,0)}] at (conv3-east) {RightBandedBox={name=linear1,caption=Linear1,%
+        xlabel={{"84", "84"}},fill=\ConvColor,bandfill=\ConvReluColor,%
+        height=1,width={84},zlabel=1,depth=1}};
+
+% Linear2
+\pic[shift={(2,0,0)}] at (linear1-east) {RightBandedBox={name=linear2,caption=Linear2,%
+        xlabel={{"10", "10"}},fill=\ConvColor,bandfill=\DcnvColor,%
+        height=1,width={10},depth=1}};
+
+% Softmax
+\pic[shift={(2,0,0)}] at (linear2-east) {Box={name=softmax,caption=Softmax,%
+        xlabel={{"10", "10"}},fill=\SoftmaxColor,%
+        height=1,width={10},depth=1,zlabel=1}};
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Draw connections
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\draw [connection]  (maxpool1-east)    -- node {\midarrow} (batchnorm-west);
+\draw [connection]  (batchnorm-east)    -- node {\midarrow} (maxpool2-west);
+\draw [connection]  (maxpool2-east)    -- node {\midarrow} (conv3-west);
+\draw [connection]  (conv3-east)    -- node {\midarrow} (linear1-west);
+\draw [connection]  (linear1-east)    -- node {\midarrow} (linear2-west);
+\draw [connection]  (linear2-east)    -- node {\midarrow} (softmax-west);
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Draw Dotted Edges 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\draw[densely dashed]
+(linear2-nearnortheast) -- (softmax-nearnorthwest)
+(linear2-nearsoutheast) -- (softmax-nearsouthwest)
+(linear2-farsoutheast)  -- (softmax-farsouthwest)
+(linear2-farnortheast)  -- (softmax-farnorthwest);
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{tikzpicture}

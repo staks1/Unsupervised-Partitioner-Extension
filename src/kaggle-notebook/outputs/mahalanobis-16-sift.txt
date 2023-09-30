@@ -1,0 +1,1350 @@
+/kaggle/input/neural-partitioner-dsit/main.py:173: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /usr/local/src/pytorch/torch/csrc/utils/tensor_new.cpp:245.)
+  Y = prepare.dist_rank(torch.tensor(X, dtype=float), k_train, opt=options, data=data, distance_metric = distance_metric)
+/kaggle/input/neural-partitioner-dsit/main.py:224: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  Y = torch.tensor(Y, dtype=torch.double , device=primary_device)
+n OK training and prediction on the forest will be done using one model only 
+RUNNING WITH: epochs=80; lr=0.0009; n_bins=16; levels=0; branching=16; model type=neural
+ -- READING PATHS -- 
+preparing knn with k =  10
+total_chunks
+11112
+0/11112
+500/11112
+1000/11112
+1500/11112
+2000/11112
+2500/11112
+3000/11112
+3500/11112
+4000/11112
+4500/11112
+5000/11112
+5500/11112
+6000/11112
+6500/11112
+7000/11112
+7500/11112
+8000/11112
+8500/11112
+9000/11112
+9500/11112
+10000/11112
+10500/11112
+11000/11112
+Preparing dataset tensor
+prepping k-NN Matrix tensor
+BUILDING TREE
+BUILDING TREE 0 / 3
+self n class  16
+ -- BUILDING TREE WITH 0 LEVELS AND 16 BRANCHING -- 
+BUILDING TREE 1 / 3
+self n class  16
+ -- BUILDING TREE WITH 0 LEVELS AND 16 BRANCHING -- 
+BUILDING TREE 2 / 3
+self n class  16
+ -- BUILDING TREE WITH 0 LEVELS AND 16 BRANCHING -- 
+no of parameters in one model: 35600
+training forest
+training model  0  /  3
+preparing input weights
+
+TRAINING MODEL level : 0, level index: 0 / 1
+model loadedd from file  False
+training model with 80 iters and 0.0009 lr, 128 hidden params and 16 classes
+standardizing data 
+TRAINING
+
+epoch  1  /  80
+
+b sum  tensor(-0.6885, device='cuda:0')
+TRAINING
+
+epoch  2  /  80
+
+b sum  tensor(-0.7285, device='cuda:0')
+TRAINING
+
+epoch  3  /  80
+
+b sum  tensor(-0.7397, device='cuda:0')
+TRAINING
+
+epoch  4  /  80
+
+b sum  tensor(-0.7443, device='cuda:0')
+TRAINING
+
+epoch  5  /  80
+
+b sum  tensor(-0.7469, device='cuda:0')
+TRAINING
+
+epoch  6  /  80
+
+b sum  tensor(-0.7491, device='cuda:0')
+TRAINING
+
+epoch  7  /  80
+
+b sum  tensor(-0.7510, device='cuda:0')
+TRAINING
+
+epoch  8  /  80
+
+b sum  tensor(-0.7527, device='cuda:0')
+TRAINING
+
+epoch  9  /  80
+
+b sum  tensor(-0.7537, device='cuda:0')
+TRAINING
+
+epoch  10  /  80
+
+b sum  tensor(-0.7540, device='cuda:0')
+TRAINING
+
+epoch  11  /  80
+
+b sum  tensor(-0.7550, device='cuda:0')
+TRAINING
+
+epoch  12  /  80
+
+b sum  tensor(-0.7557, device='cuda:0')
+TRAINING
+
+epoch  13  /  80
+
+b sum  tensor(-0.7566, device='cuda:0')
+TRAINING
+
+epoch  14  /  80
+
+b sum  tensor(-0.7568, device='cuda:0')
+TRAINING
+
+epoch  15  /  80
+
+b sum  tensor(-0.7576, device='cuda:0')
+TRAINING
+
+epoch  16  /  80
+
+b sum  tensor(-0.7585, device='cuda:0')
+TRAINING
+
+epoch  17  /  80
+
+b sum  tensor(-0.7592, device='cuda:0')
+TRAINING
+
+epoch  18  /  80
+
+b sum  tensor(-0.7597, device='cuda:0')
+TRAINING
+
+epoch  19  /  80
+
+b sum  tensor(-0.7602, device='cuda:0')
+TRAINING
+
+epoch  20  /  80
+
+b sum  tensor(-0.7604, device='cuda:0')
+TRAINING
+
+epoch  21  /  80
+
+b sum  tensor(-0.7603, device='cuda:0')
+TRAINING
+
+epoch  22  /  80
+
+b sum  tensor(-0.7614, device='cuda:0')
+TRAINING
+
+epoch  23  /  80
+
+b sum  tensor(-0.7613, device='cuda:0')
+TRAINING
+
+epoch  24  /  80
+
+b sum  tensor(-0.7617, device='cuda:0')
+TRAINING
+
+epoch  25  /  80
+
+b sum  tensor(-0.7622, device='cuda:0')
+TRAINING
+
+epoch  26  /  80
+
+b sum  tensor(-0.7621, device='cuda:0')
+TRAINING
+
+epoch  27  /  80
+
+b sum  tensor(-0.7624, device='cuda:0')
+TRAINING
+
+epoch  28  /  80
+
+b sum  tensor(-0.7627, device='cuda:0')
+TRAINING
+
+epoch  29  /  80
+
+b sum  tensor(-0.7626, device='cuda:0')
+TRAINING
+
+epoch  30  /  80
+
+b sum  tensor(-0.7629, device='cuda:0')
+TRAINING
+
+epoch  31  /  80
+
+b sum  tensor(-0.7631, device='cuda:0')
+TRAINING
+
+epoch  32  /  80
+
+b sum  tensor(-0.7635, device='cuda:0')
+TRAINING
+
+epoch  33  /  80
+
+b sum  tensor(-0.7635, device='cuda:0')
+TRAINING
+
+epoch  34  /  80
+
+b sum  tensor(-0.7630, device='cuda:0')
+TRAINING
+
+epoch  35  /  80
+
+b sum  tensor(-0.7638, device='cuda:0')
+TRAINING
+
+epoch  36  /  80
+
+b sum  tensor(-0.7635, device='cuda:0')
+TRAINING
+
+epoch  37  /  80
+
+b sum  tensor(-0.7639, device='cuda:0')
+TRAINING
+
+epoch  38  /  80
+
+b sum  tensor(-0.7643, device='cuda:0')
+TRAINING
+
+epoch  39  /  80
+
+b sum  tensor(-0.7640, device='cuda:0')
+TRAINING
+
+epoch  40  /  80
+
+b sum  tensor(-0.7643, device='cuda:0')
+TRAINING
+
+epoch  41  /  80
+
+b sum  tensor(-0.7646, device='cuda:0')
+TRAINING
+
+epoch  42  /  80
+
+b sum  tensor(-0.7642, device='cuda:0')
+TRAINING
+
+epoch  43  /  80
+
+b sum  tensor(-0.7644, device='cuda:0')
+TRAINING
+
+epoch  44  /  80
+
+b sum  tensor(-0.7644, device='cuda:0')
+TRAINING
+
+epoch  45  /  80
+
+b sum  tensor(-0.7643, device='cuda:0')
+TRAINING
+
+epoch  46  /  80
+
+b sum  tensor(-0.7644, device='cuda:0')
+TRAINING
+
+epoch  47  /  80
+
+b sum  tensor(-0.7646, device='cuda:0')
+TRAINING
+
+epoch  48  /  80
+
+b sum  tensor(-0.7645, device='cuda:0')
+TRAINING
+
+epoch  49  /  80
+
+b sum  tensor(-0.7648, device='cuda:0')
+TRAINING
+
+epoch  50  /  80
+
+b sum  tensor(-0.7651, device='cuda:0')
+TRAINING
+
+epoch  51  /  80
+
+b sum  tensor(-0.7649, device='cuda:0')
+TRAINING
+
+epoch  52  /  80
+
+b sum  tensor(-0.7653, device='cuda:0')
+TRAINING
+
+epoch  53  /  80
+
+b sum  tensor(-0.7655, device='cuda:0')
+TRAINING
+
+epoch  54  /  80
+
+b sum  tensor(-0.7655, device='cuda:0')
+TRAINING
+
+epoch  55  /  80
+
+b sum  tensor(-0.7657, device='cuda:0')
+TRAINING
+
+epoch  56  /  80
+
+b sum  tensor(-0.7658, device='cuda:0')
+TRAINING
+
+epoch  57  /  80
+
+b sum  tensor(-0.7660, device='cuda:0')
+TRAINING
+
+epoch  58  /  80
+
+b sum  tensor(-0.7662, device='cuda:0')
+TRAINING
+
+epoch  59  /  80
+
+b sum  tensor(-0.7660, device='cuda:0')
+TRAINING
+
+epoch  60  /  80
+
+b sum  tensor(-0.7663, device='cuda:0')
+TRAINING
+
+epoch  61  /  80
+
+b sum  tensor(-0.7669, device='cuda:0')
+TRAINING
+
+epoch  62  /  80
+
+b sum  tensor(-0.7663, device='cuda:0')
+TRAINING
+
+epoch  63  /  80
+
+b sum  tensor(-0.7664, device='cuda:0')
+TRAINING
+
+epoch  64  /  80
+
+b sum  tensor(-0.7666, device='cuda:0')
+TRAINING
+
+epoch  65  /  80
+
+b sum  tensor(-0.7670, device='cuda:0')
+TRAINING
+
+epoch  66  /  80
+
+b sum  tensor(-0.7669, device='cuda:0')
+TRAINING
+
+epoch  67  /  80
+
+b sum  tensor(-0.7668, device='cuda:0')
+TRAINING
+
+epoch  68  /  80
+
+b sum  tensor(-0.7668, device='cuda:0')
+TRAINING
+
+epoch  69  /  80
+
+b sum  tensor(-0.7670, device='cuda:0')
+TRAINING
+
+epoch  70  /  80
+
+b sum  tensor(-0.7673, device='cuda:0')
+TRAINING
+
+epoch  71  /  80
+
+b sum  tensor(-0.7676, device='cuda:0')
+TRAINING
+
+epoch  72  /  80
+
+b sum  tensor(-0.7676, device='cuda:0')
+TRAINING
+
+epoch  73  /  80
+
+b sum  tensor(-0.7672, device='cuda:0')
+TRAINING
+
+epoch  74  /  80
+
+b sum  tensor(-0.7675, device='cuda:0')
+TRAINING
+
+epoch  75  /  80
+
+b sum  tensor(-0.7677, device='cuda:0')
+TRAINING
+
+epoch  76  /  80
+
+b sum  tensor(-0.7676, device='cuda:0')
+TRAINING
+
+epoch  77  /  80
+
+b sum  tensor(-0.7680, device='cuda:0')
+TRAINING
+
+epoch  78  /  80
+
+b sum  tensor(-0.7676, device='cuda:0')
+TRAINING
+
+epoch  79  /  80
+
+b sum  tensor(-0.7681, device='cuda:0')
+TRAINING
+
+epoch  80  /  80
+
+b sum  tensor(-0.7680, device='cuda:0')
+
+
+training model  1  /  3
+preparing input weights
+model  0  /  1
+
+TRAINING MODEL level : 0, level index: 0 / 1
+model loadedd from file  False
+training model with 80 iters and 0.0009 lr, 128 hidden params and 16 classes
+standardizing data 
+TRAINING
+
+epoch  1  /  80
+
+b sum  tensor(-0.6555, device='cuda:0')
+TRAINING
+
+epoch  2  /  80
+
+b sum  tensor(-0.7236, device='cuda:0')
+TRAINING
+
+epoch  3  /  80
+
+b sum  tensor(-0.7383, device='cuda:0')
+TRAINING
+
+epoch  4  /  80
+
+b sum  tensor(-0.7437, device='cuda:0')
+TRAINING
+
+epoch  5  /  80
+
+b sum  tensor(-0.7469, device='cuda:0')
+TRAINING
+
+epoch  6  /  80
+
+b sum  tensor(-0.7497, device='cuda:0')
+TRAINING
+
+epoch  7  /  80
+
+b sum  tensor(-0.7513, device='cuda:0')
+TRAINING
+
+epoch  8  /  80
+
+b sum  tensor(-0.7519, device='cuda:0')
+TRAINING
+
+epoch  9  /  80
+
+b sum  tensor(-0.7529, device='cuda:0')
+TRAINING
+
+epoch  10  /  80
+
+b sum  tensor(-0.7534, device='cuda:0')
+TRAINING
+
+epoch  11  /  80
+
+b sum  tensor(-0.7544, device='cuda:0')
+TRAINING
+
+epoch  12  /  80
+
+b sum  tensor(-0.7548, device='cuda:0')
+TRAINING
+
+epoch  13  /  80
+
+b sum  tensor(-0.7554, device='cuda:0')
+TRAINING
+
+epoch  14  /  80
+
+b sum  tensor(-0.7556, device='cuda:0')
+TRAINING
+
+epoch  15  /  80
+
+b sum  tensor(-0.7559, device='cuda:0')
+TRAINING
+
+epoch  16  /  80
+
+b sum  tensor(-0.7566, device='cuda:0')
+TRAINING
+
+epoch  17  /  80
+
+b sum  tensor(-0.7565, device='cuda:0')
+TRAINING
+
+epoch  18  /  80
+
+b sum  tensor(-0.7569, device='cuda:0')
+TRAINING
+
+epoch  19  /  80
+
+b sum  tensor(-0.7572, device='cuda:0')
+TRAINING
+
+epoch  20  /  80
+
+b sum  tensor(-0.7581, device='cuda:0')
+TRAINING
+
+epoch  21  /  80
+
+b sum  tensor(-0.7584, device='cuda:0')
+TRAINING
+
+epoch  22  /  80
+
+b sum  tensor(-0.7584, device='cuda:0')
+TRAINING
+
+epoch  23  /  80
+
+b sum  tensor(-0.7583, device='cuda:0')
+TRAINING
+
+epoch  24  /  80
+
+b sum  tensor(-0.7591, device='cuda:0')
+TRAINING
+
+epoch  25  /  80
+
+b sum  tensor(-0.7594, device='cuda:0')
+TRAINING
+
+epoch  26  /  80
+
+b sum  tensor(-0.7596, device='cuda:0')
+TRAINING
+
+epoch  27  /  80
+
+b sum  tensor(-0.7597, device='cuda:0')
+TRAINING
+
+epoch  28  /  80
+
+b sum  tensor(-0.7600, device='cuda:0')
+TRAINING
+
+epoch  29  /  80
+
+b sum  tensor(-0.7605, device='cuda:0')
+TRAINING
+
+epoch  30  /  80
+
+b sum  tensor(-0.7604, device='cuda:0')
+TRAINING
+
+epoch  31  /  80
+
+b sum  tensor(-0.7604, device='cuda:0')
+TRAINING
+
+epoch  32  /  80
+
+b sum  tensor(-0.7606, device='cuda:0')
+TRAINING
+
+epoch  33  /  80
+
+b sum  tensor(-0.7609, device='cuda:0')
+TRAINING
+
+epoch  34  /  80
+
+b sum  tensor(-0.7608, device='cuda:0')
+TRAINING
+
+epoch  35  /  80
+
+b sum  tensor(-0.7608, device='cuda:0')
+TRAINING
+
+epoch  36  /  80
+
+b sum  tensor(-0.7616, device='cuda:0')
+TRAINING
+
+epoch  37  /  80
+
+b sum  tensor(-0.7612, device='cuda:0')
+TRAINING
+
+epoch  38  /  80
+
+b sum  tensor(-0.7615, device='cuda:0')
+TRAINING
+
+epoch  39  /  80
+
+b sum  tensor(-0.7610, device='cuda:0')
+TRAINING
+
+epoch  40  /  80
+
+b sum  tensor(-0.7616, device='cuda:0')
+TRAINING
+
+epoch  41  /  80
+
+b sum  tensor(-0.7620, device='cuda:0')
+TRAINING
+
+epoch  42  /  80
+
+b sum  tensor(-0.7616, device='cuda:0')
+TRAINING
+
+epoch  43  /  80
+
+b sum  tensor(-0.7619, device='cuda:0')
+TRAINING
+
+epoch  44  /  80
+
+b sum  tensor(-0.7619, device='cuda:0')
+TRAINING
+
+epoch  45  /  80
+
+b sum  tensor(-0.7615, device='cuda:0')
+TRAINING
+
+epoch  46  /  80
+
+b sum  tensor(-0.7618, device='cuda:0')
+TRAINING
+
+epoch  47  /  80
+
+b sum  tensor(-0.7619, device='cuda:0')
+TRAINING
+
+epoch  48  /  80
+
+b sum  tensor(-0.7621, device='cuda:0')
+TRAINING
+
+epoch  49  /  80
+
+b sum  tensor(-0.7622, device='cuda:0')
+TRAINING
+
+epoch  50  /  80
+
+b sum  tensor(-0.7623, device='cuda:0')
+TRAINING
+
+epoch  51  /  80
+
+b sum  tensor(-0.7628, device='cuda:0')
+TRAINING
+
+epoch  52  /  80
+
+b sum  tensor(-0.7629, device='cuda:0')
+TRAINING
+
+epoch  53  /  80
+
+b sum  tensor(-0.7630, device='cuda:0')
+TRAINING
+
+epoch  54  /  80
+
+b sum  tensor(-0.7625, device='cuda:0')
+TRAINING
+
+epoch  55  /  80
+
+b sum  tensor(-0.7625, device='cuda:0')
+TRAINING
+
+epoch  56  /  80
+
+b sum  tensor(-0.7630, device='cuda:0')
+TRAINING
+
+epoch  57  /  80
+
+b sum  tensor(-0.7625, device='cuda:0')
+TRAINING
+
+epoch  58  /  80
+
+b sum  tensor(-0.7631, device='cuda:0')
+TRAINING
+
+epoch  59  /  80
+
+b sum  tensor(-0.7632, device='cuda:0')
+TRAINING
+
+epoch  60  /  80
+
+b sum  tensor(-0.7632, device='cuda:0')
+TRAINING
+
+epoch  61  /  80
+
+b sum  tensor(-0.7631, device='cuda:0')
+TRAINING
+
+epoch  62  /  80
+
+b sum  tensor(-0.7635, device='cuda:0')
+TRAINING
+
+epoch  63  /  80
+
+b sum  tensor(-0.7631, device='cuda:0')
+TRAINING
+
+epoch  64  /  80
+
+b sum  tensor(-0.7627, device='cuda:0')
+TRAINING
+
+epoch  65  /  80
+
+b sum  tensor(-0.7637, device='cuda:0')
+TRAINING
+
+epoch  66  /  80
+
+b sum  tensor(-0.7631, device='cuda:0')
+TRAINING
+
+epoch  67  /  80
+
+b sum  tensor(-0.7635, device='cuda:0')
+TRAINING
+
+epoch  68  /  80
+
+b sum  tensor(-0.7636, device='cuda:0')
+TRAINING
+
+epoch  69  /  80
+
+b sum  tensor(-0.7637, device='cuda:0')
+TRAINING
+
+epoch  70  /  80
+
+b sum  tensor(-0.7641, device='cuda:0')
+TRAINING
+
+epoch  71  /  80
+
+b sum  tensor(-0.7637, device='cuda:0')
+TRAINING
+
+epoch  72  /  80
+
+b sum  tensor(-0.7638, device='cuda:0')
+TRAINING
+
+epoch  73  /  80
+
+b sum  tensor(-0.7640, device='cuda:0')
+TRAINING
+
+epoch  74  /  80
+
+b sum  tensor(-0.7631, device='cuda:0')
+TRAINING
+
+epoch  75  /  80
+
+b sum  tensor(-0.7638, device='cuda:0')
+TRAINING
+
+epoch  76  /  80
+
+b sum  tensor(-0.7640, device='cuda:0')
+TRAINING
+
+epoch  77  /  80
+
+b sum  tensor(-0.7634, device='cuda:0')
+TRAINING
+
+epoch  78  /  80
+
+b sum  tensor(-0.7643, device='cuda:0')
+TRAINING
+
+epoch  79  /  80
+
+b sum  tensor(-0.7643, device='cuda:0')
+TRAINING
+
+epoch  80  /  80
+
+b sum  tensor(-0.7640, device='cuda:0')
+
+
+training model  2  /  3
+preparing input weights
+model  0  /  2
+model  1  /  2
+
+TRAINING MODEL level : 0, level index: 0 / 1
+model loadedd from file  False
+training model with 80 iters and 0.0009 lr, 128 hidden params and 16 classes
+standardizing data 
+TRAINING
+
+epoch  1  /  80
+
+b sum  tensor(-0.6769, device='cuda:0')
+TRAINING
+
+epoch  2  /  80
+
+b sum  tensor(-0.7229, device='cuda:0')
+TRAINING
+
+epoch  3  /  80
+
+b sum  tensor(-0.7385, device='cuda:0')
+TRAINING
+
+epoch  4  /  80
+
+b sum  tensor(-0.7446, device='cuda:0')
+TRAINING
+
+epoch  5  /  80
+
+b sum  tensor(-0.7482, device='cuda:0')
+TRAINING
+
+epoch  6  /  80
+
+b sum  tensor(-0.7500, device='cuda:0')
+TRAINING
+
+epoch  7  /  80
+
+b sum  tensor(-0.7511, device='cuda:0')
+TRAINING
+
+epoch  8  /  80
+
+b sum  tensor(-0.7519, device='cuda:0')
+TRAINING
+
+epoch  9  /  80
+
+b sum  tensor(-0.7522, device='cuda:0')
+TRAINING
+
+epoch  10  /  80
+
+b sum  tensor(-0.7526, device='cuda:0')
+TRAINING
+
+epoch  11  /  80
+
+b sum  tensor(-0.7528, device='cuda:0')
+TRAINING
+
+epoch  12  /  80
+
+b sum  tensor(-0.7536, device='cuda:0')
+TRAINING
+
+epoch  13  /  80
+
+b sum  tensor(-0.7544, device='cuda:0')
+TRAINING
+
+epoch  14  /  80
+
+b sum  tensor(-0.7548, device='cuda:0')
+TRAINING
+
+epoch  15  /  80
+
+b sum  tensor(-0.7545, device='cuda:0')
+TRAINING
+
+epoch  16  /  80
+
+b sum  tensor(-0.7552, device='cuda:0')
+TRAINING
+
+epoch  17  /  80
+
+b sum  tensor(-0.7549, device='cuda:0')
+TRAINING
+
+epoch  18  /  80
+
+b sum  tensor(-0.7558, device='cuda:0')
+TRAINING
+
+epoch  19  /  80
+
+b sum  tensor(-0.7563, device='cuda:0')
+TRAINING
+
+epoch  20  /  80
+
+b sum  tensor(-0.7564, device='cuda:0')
+TRAINING
+
+epoch  21  /  80
+
+b sum  tensor(-0.7564, device='cuda:0')
+TRAINING
+
+epoch  22  /  80
+
+b sum  tensor(-0.7567, device='cuda:0')
+TRAINING
+
+epoch  23  /  80
+
+b sum  tensor(-0.7564, device='cuda:0')
+TRAINING
+
+epoch  24  /  80
+
+b sum  tensor(-0.7565, device='cuda:0')
+TRAINING
+
+epoch  25  /  80
+
+b sum  tensor(-0.7566, device='cuda:0')
+TRAINING
+
+epoch  26  /  80
+
+b sum  tensor(-0.7569, device='cuda:0')
+TRAINING
+
+epoch  27  /  80
+
+b sum  tensor(-0.7569, device='cuda:0')
+TRAINING
+
+epoch  28  /  80
+
+b sum  tensor(-0.7579, device='cuda:0')
+TRAINING
+
+epoch  29  /  80
+
+b sum  tensor(-0.7574, device='cuda:0')
+TRAINING
+
+epoch  30  /  80
+
+b sum  tensor(-0.7576, device='cuda:0')
+TRAINING
+
+epoch  31  /  80
+
+b sum  tensor(-0.7579, device='cuda:0')
+TRAINING
+
+epoch  32  /  80
+
+b sum  tensor(-0.7580, device='cuda:0')
+TRAINING
+
+epoch  33  /  80
+
+b sum  tensor(-0.7585, device='cuda:0')
+TRAINING
+
+epoch  34  /  80
+
+b sum  tensor(-0.7581, device='cuda:0')
+TRAINING
+
+epoch  35  /  80
+
+b sum  tensor(-0.7585, device='cuda:0')
+TRAINING
+
+epoch  36  /  80
+
+b sum  tensor(-0.7587, device='cuda:0')
+TRAINING
+
+epoch  37  /  80
+
+b sum  tensor(-0.7589, device='cuda:0')
+TRAINING
+
+epoch  38  /  80
+
+b sum  tensor(-0.7592, device='cuda:0')
+TRAINING
+
+epoch  39  /  80
+
+b sum  tensor(-0.7594, device='cuda:0')
+TRAINING
+
+epoch  40  /  80
+
+b sum  tensor(-0.7594, device='cuda:0')
+TRAINING
+
+epoch  41  /  80
+
+b sum  tensor(-0.7596, device='cuda:0')
+TRAINING
+
+epoch  42  /  80
+
+b sum  tensor(-0.7596, device='cuda:0')
+TRAINING
+
+epoch  43  /  80
+
+b sum  tensor(-0.7595, device='cuda:0')
+TRAINING
+
+epoch  44  /  80
+
+b sum  tensor(-0.7597, device='cuda:0')
+TRAINING
+
+epoch  45  /  80
+
+b sum  tensor(-0.7602, device='cuda:0')
+TRAINING
+
+epoch  46  /  80
+
+b sum  tensor(-0.7603, device='cuda:0')
+TRAINING
+
+epoch  47  /  80
+
+b sum  tensor(-0.7603, device='cuda:0')
+TRAINING
+
+epoch  48  /  80
+
+b sum  tensor(-0.7602, device='cuda:0')
+TRAINING
+
+epoch  49  /  80
+
+b sum  tensor(-0.7605, device='cuda:0')
+TRAINING
+
+epoch  50  /  80
+
+b sum  tensor(-0.7610, device='cuda:0')
+TRAINING
+
+epoch  51  /  80
+
+b sum  tensor(-0.7607, device='cuda:0')
+TRAINING
+
+epoch  52  /  80
+
+b sum  tensor(-0.7610, device='cuda:0')
+TRAINING
+
+epoch  53  /  80
+
+b sum  tensor(-0.7613, device='cuda:0')
+TRAINING
+
+epoch  54  /  80
+
+b sum  tensor(-0.7609, device='cuda:0')
+TRAINING
+
+epoch  55  /  80
+
+b sum  tensor(-0.7609, device='cuda:0')
+TRAINING
+
+epoch  56  /  80
+
+b sum  tensor(-0.7612, device='cuda:0')
+TRAINING
+
+epoch  57  /  80
+
+b sum  tensor(-0.7615, device='cuda:0')
+TRAINING
+
+epoch  58  /  80
+
+b sum  tensor(-0.7616, device='cuda:0')
+TRAINING
+
+epoch  59  /  80
+
+b sum  tensor(-0.7616, device='cuda:0')
+TRAINING
+
+epoch  60  /  80
+
+b sum  tensor(-0.7617, device='cuda:0')
+TRAINING
+
+epoch  61  /  80
+
+b sum  tensor(-0.7615, device='cuda:0')
+TRAINING
+
+epoch  62  /  80
+
+b sum  tensor(-0.7613, device='cuda:0')
+TRAINING
+
+epoch  63  /  80
+
+b sum  tensor(-0.7617, device='cuda:0')
+TRAINING
+
+epoch  64  /  80
+
+b sum  tensor(-0.7611, device='cuda:0')
+TRAINING
+
+epoch  65  /  80
+
+b sum  tensor(-0.7615, device='cuda:0')
+TRAINING
+
+epoch  66  /  80
+
+b sum  tensor(-0.7621, device='cuda:0')
+TRAINING
+
+epoch  67  /  80
+
+b sum  tensor(-0.7616, device='cuda:0')
+TRAINING
+
+epoch  68  /  80
+
+b sum  tensor(-0.7623, device='cuda:0')
+TRAINING
+
+epoch  69  /  80
+
+b sum  tensor(-0.7620, device='cuda:0')
+TRAINING
+
+epoch  70  /  80
+
+b sum  tensor(-0.7623, device='cuda:0')
+TRAINING
+
+epoch  71  /  80
+
+b sum  tensor(-0.7620, device='cuda:0')
+TRAINING
+
+epoch  72  /  80
+
+b sum  tensor(-0.7622, device='cuda:0')
+TRAINING
+
+epoch  73  /  80
+
+b sum  tensor(-0.7622, device='cuda:0')
+TRAINING
+
+epoch  74  /  80
+
+b sum  tensor(-0.7624, device='cuda:0')
+TRAINING
+
+epoch  75  /  80
+
+b sum  tensor(-0.7626, device='cuda:0')
+TRAINING
+
+epoch  76  /  80
+
+b sum  tensor(-0.7630, device='cuda:0')
+TRAINING
+
+epoch  77  /  80
+
+b sum  tensor(-0.7625, device='cuda:0')
+TRAINING
+
+epoch  78  /  80
+
+b sum  tensor(-0.7626, device='cuda:0')
+TRAINING
+
+epoch  79  /  80
+
+b sum  tensor(-0.7626, device='cuda:0')
+TRAINING
+
+epoch  80  /  80
+
+b sum  tensor(-0.7630, device='cuda:0')
+
+
+ --- FINDING TEST ACCURACY --- 
+
+-----DOING MODEL INFERENCE ------- 
+----- MODEL INFERENCE DONE ------- 
+no of parameters in one model: 35600
+----- CALCULATING K-NN RECALL FOR EACH POINT ------- 
+1 models, 1 bins 
+
+
+mean accuracy  tensor(0.6260)
+mean candidate set size tensor(62837.7422)
+
+average query time: 0.25, standard deviation: 0.03
+1 models, 2 bins 
+
+
+mean accuracy  tensor(0.6957)
+mean candidate set size tensor(132787.7188)
+
+average query time: 0.34, standard deviation: 0.05
+1 models, 3 bins 
+
+
+mean accuracy  tensor(0.7338)
+mean candidate set size tensor(200100.1875)
+
+average query time: 0.43, standard deviation: 0.09
+2 models, 1 bins 
+
+
+mean accuracy  tensor(0.6465)
+mean candidate set size tensor(62822.0938)
+
+average query time: 0.25, standard deviation: 0.03
+2 models, 2 bins 
+
+
+mean accuracy  tensor(0.6837)
+mean candidate set size tensor(132889.3750)
+
+average query time: 0.34, standard deviation: 0.04
+2 models, 3 bins 
+
+
+mean accuracy  tensor(0.7170)
+mean candidate set size tensor(199755.5000)
+
+average query time: 0.42, standard deviation: 0.06
+3 models, 1 bins 
+
+
+mean accuracy  tensor(0.6368)
+mean candidate set size tensor(63386.2930)
+
+average query time: 0.25, standard deviation: 0.02
+3 models, 2 bins 
+
+
+mean accuracy  tensor(0.6670)
+mean candidate set size tensor(132219.2188)
+
+average query time: 0.36, standard deviation: 0.10
+3 models, 3 bins 
+
+
+mean accuracy  tensor(0.6992)
+mean candidate set size tensor(199818.8750)
+
+average query time: 0.42, standard deviation: 0.04
+first bin accuracy
+0.6368200182914734
+candidate_set_size of first bin on average
+63386.29296875

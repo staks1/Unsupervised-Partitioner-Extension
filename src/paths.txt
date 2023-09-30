@@ -1,0 +1,20 @@
+# SPECIFY PATHS AS ABSOLUTE PATHS
+
+# SET UP FOR MICHAEL
+#path_to_mnist=C:\Users\qubit\Desktop\Neural-Partitioner\data\raw\mnist-784-euclidean.hdf5
+#path_to_fashion_mnist=C:\Users\qubit\Desktop\Neural-Partitioner\data\raw\fashion-mnist-784-euclidean.hdf5
+#path_to_sift=C:\Users\qubit\Desktop\Neural-Partitioner\data\raw\sift-128-euclidean.hdf5
+#path_to_glove=C:\Users\qubit\Desktop\Neural-Partitioner\data\raw\glove-200-angular.hdf5
+#path_to_gist=C:\Users\qubit\Desktop\Neural-Partitioner\data\raw\gist-960-euclidean.hdf5
+#path_to_deep=C:\Users\qubit\Desktop\Neural-Partitioner\data\raw\deep-image-96-angular.hdf5
+#path_to_knn_matrix=C:\Users\qubit\Desktop\Neural-Partitioner\data
+#path_to_models=C:\Users\qubit\Desktop\Neural-Partitioner\models
+#path_to_tensors=C:\Users\qubit\Desktop\Neural-Partitioner\tensors
+
+
+# SET UP FOR STATHIS 
+path_to_mnist=/home/st_ko/Documents/environments/PyTorch/UnsuperVSpace/Neural-Partitioner/Neural-Partitioner/data_folder/reduced-mnist-784-euclidean.hdf5
+path_to_sift=/home/st_ko/Documents/environments/PyTorch/UnsuperVSpace/Neural-Partitioner/Neural-Partitioner/data_folder/sift-128-euclidean.hdf5
+path_to_knn_matrix=/home/st_ko/Documents/environments/PyTorch/UnsuperVSpace/Neural-Partitioner/Neural-Partitioner/data_folder
+path_to_models=/home/st_ko/Documents/environments/PyTorch/UnsuperVSpace/Neural-Partitioner/Neural-Partitioner/models
+path_to_tensors=/home/st_ko/Documents/environments/PyTorch/UnsuperVSpace/Neural-Partitioner/Neural-Partitioner/tensors

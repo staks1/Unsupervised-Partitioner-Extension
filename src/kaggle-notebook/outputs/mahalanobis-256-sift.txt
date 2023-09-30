@@ -1,0 +1,601 @@
+/kaggle/input/neural-partitioner-dsit/main.py:173: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /usr/local/src/pytorch/torch/csrc/utils/tensor_new.cpp:245.)
+  Y = prepare.dist_rank(torch.tensor(X, dtype=float), k_train, opt=options, data=data, distance_metric = distance_metric)
+/kaggle/input/neural-partitioner-dsit/main.py:224: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  Y = torch.tensor(Y, dtype=torch.double , device=primary_device)
+n OK training and prediction on the forest will be done using one model only 
+RUNNING WITH: epochs=80; lr=0.0009; n_bins=256; levels=0; branching=256; model type=neural
+ -- READING PATHS -- 
+preparing knn with k =  10
+total_chunks
+11112
+0/11112
+500/11112
+1000/11112
+1500/11112
+2000/11112
+2500/11112
+3000/11112
+3500/11112
+4000/11112
+4500/11112
+5000/11112
+5500/11112
+6000/11112
+6500/11112
+7000/11112
+7500/11112
+8000/11112
+8500/11112
+9000/11112
+9500/11112
+10000/11112
+10500/11112
+11000/11112
+Preparing dataset tensor
+prepping k-NN Matrix tensor
+BUILDING TREE
+BUILDING TREE 0 / 3
+self n class  256
+ -- BUILDING TREE WITH 0 LEVELS AND 256 BRANCHING -- 
+BUILDING TREE 1 / 3
+self n class  256
+ -- BUILDING TREE WITH 0 LEVELS AND 256 BRANCHING -- 
+BUILDING TREE 2 / 3
+self n class  256
+ -- BUILDING TREE WITH 0 LEVELS AND 256 BRANCHING -- 
+no of parameters in one model: 66560
+training forest
+training model  0  /  3
+preparing input weights
+
+TRAINING MODEL level : 0, level index: 0 / 1
+model loadedd from file  False
+training model with 80 iters and 0.0009 lr, 128 hidden params and 256 classes
+standardizing data 
+TRAINING
+
+epoch  1  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  2  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  3  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  4  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  5  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  6  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  7  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  8  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  9  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  10  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  11  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  12  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  13  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  14  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  15  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  16  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  17  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  18  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  19  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  20  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  21  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  22  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  23  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  24  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  25  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  26  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  27  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  28  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  29  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  30  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  31  /  80
+
+b sum  tensor(0., device='cuda:0')
+loss is 0, BREAKING
+
+
+training model  1  /  3
+preparing input weights
+model  0  /  1
+
+TRAINING MODEL level : 0, level index: 0 / 1
+model loadedd from file  False
+training model with 80 iters and 0.0009 lr, 128 hidden params and 256 classes
+standardizing data 
+TRAINING
+
+epoch  1  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  2  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  3  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  4  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  5  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  6  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  7  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  8  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  9  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  10  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  11  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  12  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  13  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  14  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  15  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  16  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  17  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  18  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  19  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  20  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  21  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  22  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  23  /  80
+
+b sum  tensor(0., device='cuda:0')
+loss is 0, BREAKING
+
+
+training model  2  /  3
+preparing input weights
+model  0  /  2
+model  1  /  2
+
+TRAINING MODEL level : 0, level index: 0 / 1
+model loadedd from file  False
+training model with 80 iters and 0.0009 lr, 128 hidden params and 256 classes
+standardizing data 
+TRAINING
+
+epoch  1  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  2  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  3  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  4  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  5  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  6  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  7  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  8  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  9  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  10  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  11  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  12  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  13  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  14  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  15  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  16  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  17  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  18  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  19  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  20  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  21  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  22  /  80
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  23  /  80
+
+b sum  tensor(0., device='cuda:0')
+loss is 0, BREAKING
+
+
+ --- FINDING TEST ACCURACY --- 
+
+-----DOING MODEL INFERENCE ------- 
+----- MODEL INFERENCE DONE ------- 
+no of parameters in one model: 66560
+----- CALCULATING K-NN RECALL FOR EACH POINT ------- 
+1 models, 1 bins 
+
+
+mean accuracy  tensor(1.)
+mean candidate set size tensor(1000000.)
+
+average query time: 0.25, standard deviation: 0.03
+1 models, 2 bins 
+
+
+mean accuracy  tensor(1.)
+mean candidate set size tensor(1000000.)
+
+average query time: 0.35, standard deviation: 0.06
+1 models, 3 bins 
+
+
+mean accuracy  tensor(1.)
+mean candidate set size tensor(1000000.)
+
+average query time: 0.42, standard deviation: 0.04
+1 models, 4 bins 
+
+
+mean accuracy  tensor(1.)
+mean candidate set size tensor(1000000.)
+
+average query time: 0.51, standard deviation: 0.05
+1 models, 5 bins 
+
+
+mean accuracy  tensor(1.)
+mean candidate set size tensor(1000000.)
+
+average query time: 0.60, standard deviation: 0.09
+1 models, 6 bins 
+
+
+mean accuracy  tensor(1.)
+mean candidate set size tensor(1000000.)
+
+average query time: 0.68, standard deviation: 0.05
+2 models, 1 bins 
+
+
+mean accuracy  tensor(1.)
+mean candidate set size tensor(1000000.)
+
+average query time: 0.26, standard deviation: 0.05
+2 models, 2 bins 
+
+
+mean accuracy  tensor(1.)
+mean candidate set size tensor(1000000.)
+
+average query time: 0.35, standard deviation: 0.07
+2 models, 3 bins 
+
+
+mean accuracy  tensor(1.)
+mean candidate set size tensor(1000000.)
+
+average query time: 0.43, standard deviation: 0.08
+2 models, 4 bins 
+
+
+mean accuracy  tensor(1.)
+mean candidate set size tensor(1000000.)
+
+average query time: 0.52, standard deviation: 0.14
+2 models, 5 bins 
+
+
+mean accuracy  tensor(1.)
+mean candidate set size tensor(1000000.)
+
+average query time: 0.59, standard deviation: 0.04
+2 models, 6 bins 
+
+
+mean accuracy  tensor(1.)
+mean candidate set size tensor(1000000.)
+
+average query time: 0.68, standard deviation: 0.06
+3 models, 1 bins 
+
+
+mean accuracy  tensor(1.)
+mean candidate set size tensor(1000000.)
+
+average query time: 0.27, standard deviation: 0.07
+3 models, 2 bins 
+
+
+mean accuracy  tensor(1.)
+mean candidate set size tensor(1000000.)
+
+average query time: 0.34, standard deviation: 0.03
+3 models, 3 bins 
+
+
+mean accuracy  tensor(1.)
+mean candidate set size tensor(1000000.)
+
+average query time: 0.42, standard deviation: 0.05
+3 models, 4 bins 
+
+
+mean accuracy  tensor(1.)
+mean candidate set size tensor(1000000.)
+
+average query time: 0.52, standard deviation: 0.07
+3 models, 5 bins 
+
+
+mean accuracy  tensor(1.)
+mean candidate set size tensor(1000000.)
+
+average query time: 0.59, standard deviation: 0.06
+3 models, 6 bins 
+
+
+mean accuracy  tensor(1.)
+mean candidate set size tensor(1000000.)
+
+average query time: 0.68, standard deviation: 0.06
+first bin accuracy
+1.0
+candidate_set_size of first bin on average
+1000000.0

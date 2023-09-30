@@ -1,0 +1,417 @@
+/kaggle/input/neural-partitioner-dsit/main.py:173: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /usr/local/src/pytorch/torch/csrc/utils/tensor_new.cpp:245.)
+  Y = prepare.dist_rank(torch.tensor(X, dtype=float), k_train, opt=options, data=data, distance_metric = distance_metric)
+/kaggle/input/neural-partitioner-dsit/main.py:224: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  Y = torch.tensor(Y, dtype=torch.double , device=primary_device)
+['cnn', 'linear', 'neural']
+n OK training and prediction on the forest will be done using combination of selected models 
+RUNNING WITH: epochs=15; lr=0.009; n_bins=1024; levels=0; branching=1024; model type=None
+ -- READING PATHS -- 
+preparing knn with k =  10
+total_chunks
+200
+0/200
+Preparing dataset tensor
+prepping k-NN Matrix tensor
+BUILDING TREE
+BUILDING TREE 0 / 3
+self n class  1024
+ -- BUILDING TREE WITH 0 LEVELS AND 1024 BRANCHING -- 
+BUILDING TREE 1 / 3
+self n class  1024
+ -- BUILDING TREE WITH 0 LEVELS AND 1024 BRANCHING -- 
+BUILDING TREE 2 / 3
+self n class  1024
+ -- BUILDING TREE WITH 0 LEVELS AND 1024 BRANCHING -- 
+no of parameters in one model: 249600
+training forest
+training model  0  /  3
+preparing input weights
+
+TRAINING MODEL level : 0, level index: 0 / 1
+model loadedd from file  False
+training model with 15 iters and 0.009 lr, 128 hidden params and 1024 classes
+standardizing data 
+TRAINING
+
+epoch  1  /  15
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  2  /  15
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  3  /  15
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  4  /  15
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  5  /  15
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  6  /  15
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  7  /  15
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  8  /  15
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  9  /  15
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  10  /  15
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  11  /  15
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  12  /  15
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  13  /  15
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  14  /  15
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  15  /  15
+
+b sum  tensor(0., device='cuda:0')
+
+
+training model  1  /  3
+preparing input weights
+model  0  /  1
+
+TRAINING MODEL level : 0, level index: 0 / 1
+model loadedd from file  False
+training model with 15 iters and 0.009 lr, 128 hidden params and 1024 classes
+standardizing data 
+TRAINING
+
+epoch  1  /  15
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  2  /  15
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  3  /  15
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  4  /  15
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  5  /  15
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  6  /  15
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  7  /  15
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  8  /  15
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  9  /  15
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  10  /  15
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  11  /  15
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  12  /  15
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  13  /  15
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  14  /  15
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  15  /  15
+
+b sum  tensor(0., device='cuda:0')
+
+
+training model  2  /  3
+preparing input weights
+model  0  /  2
+model  1  /  2
+
+TRAINING MODEL level : 0, level index: 0 / 1
+model loadedd from file  False
+training model with 15 iters and 0.009 lr, 128 hidden params and 1024 classes
+standardizing data 
+TRAINING
+
+epoch  1  /  15
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  2  /  15
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  3  /  15
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  4  /  15
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  5  /  15
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  6  /  15
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  7  /  15
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  8  /  15
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  9  /  15
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  10  /  15
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  11  /  15
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  12  /  15
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  13  /  15
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  14  /  15
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  15  /  15
+
+b sum  tensor(0., device='cuda:0')
+
+
+ --- FINDING TEST ACCURACY --- 
+
+-----DOING MODEL INFERENCE ------- 
+----- MODEL INFERENCE DONE ------- 
+no of parameters in one model: 249600
+----- CALCULATING K-NN RECALL FOR EACH POINT ------- 
+1 models, 1 bins 
+
+
+mean accuracy  tensor(1.)
+mean candidate set size tensor(60000.)
+
+average query time: 0.21, standard deviation: 0.05
+1 models, 2 bins 
+
+
+mean accuracy  tensor(1.)
+mean candidate set size tensor(60000.)
+
+average query time: 0.25, standard deviation: 0.03
+1 models, 3 bins 
+
+
+mean accuracy  tensor(1.)
+mean candidate set size tensor(60000.)
+
+average query time: 0.30, standard deviation: 0.08
+1 models, 4 bins 
+
+
+mean accuracy  tensor(1.)
+mean candidate set size tensor(60000.)
+
+average query time: 0.36, standard deviation: 0.15
+1 models, 5 bins 
+
+
+mean accuracy  tensor(1.)
+mean candidate set size tensor(60000.)
+
+average query time: 0.38, standard deviation: 0.06
+1 models, 6 bins 
+
+
+mean accuracy  tensor(1.)
+mean candidate set size tensor(60000.)
+
+average query time: 0.41, standard deviation: 0.07
+2 models, 1 bins 
+
+
+mean accuracy  tensor(0.9999)
+mean candidate set size tensor(59036.7305)
+
+average query time: 0.22, standard deviation: 0.05
+2 models, 2 bins 
+
+
+mean accuracy  tensor(1.)
+mean candidate set size tensor(59941.2344)
+
+average query time: 0.25, standard deviation: 0.03
+2 models, 3 bins 
+
+
+mean accuracy  tensor(1.)
+mean candidate set size tensor(59964.3203)
+
+average query time: 0.33, standard deviation: 0.11
+2 models, 4 bins 
+
+
+mean accuracy  tensor(1.)
+mean candidate set size tensor(59982.1562)
+
+average query time: 0.33, standard deviation: 0.04
+2 models, 5 bins 
+
+
+mean accuracy  tensor(1.)
+mean candidate set size tensor(59987.4062)
+
+average query time: 0.38, standard deviation: 0.07
+2 models, 6 bins 
+
+
+mean accuracy  tensor(1.)
+mean candidate set size tensor(59990.5547)
+
+average query time: 0.42, standard deviation: 0.07
+3 models, 1 bins 
+
+
+mean accuracy  tensor(0.9999)
+mean candidate set size tensor(59036.7305)
+
+average query time: 0.21, standard deviation: 0.04
+3 models, 2 bins 
+
+
+mean accuracy  tensor(1.)
+mean candidate set size tensor(59941.2344)
+
+average query time: 0.28, standard deviation: 0.12
+3 models, 3 bins 
+
+
+mean accuracy  tensor(1.)
+mean candidate set size tensor(59964.3203)
+
+average query time: 0.30, standard deviation: 0.06
+3 models, 4 bins 
+
+
+mean accuracy  tensor(1.)
+mean candidate set size tensor(59982.1562)
+
+average query time: 0.34, standard deviation: 0.05
+3 models, 5 bins 
+
+
+mean accuracy  tensor(1.)
+mean candidate set size tensor(59987.4062)
+
+average query time: 0.38, standard deviation: 0.08
+3 models, 6 bins 
+
+
+mean accuracy  tensor(1.)
+mean candidate set size tensor(59990.5547)
+
+average query time: 0.42, standard deviation: 0.10
+first bin accuracy
+0.9999499917030334
+candidate_set_size of first bin on average
+59036.73046875

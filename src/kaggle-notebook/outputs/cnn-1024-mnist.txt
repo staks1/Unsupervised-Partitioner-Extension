@@ -1,0 +1,494 @@
+/kaggle/input/neural-partitioner-dsit/main.py:173: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /usr/local/src/pytorch/torch/csrc/utils/tensor_new.cpp:245.)
+  Y = prepare.dist_rank(torch.tensor(X, dtype=float), k_train, opt=options, data=data, distance_metric = distance_metric)
+/kaggle/input/neural-partitioner-dsit/main.py:224: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  Y = torch.tensor(Y, dtype=torch.double , device=primary_device)
+n OK training and prediction on the forest will be done using one model only 
+RUNNING WITH: epochs=20; lr=0.009; n_bins=1024; levels=0; branching=1024; model type=cnn
+ -- READING PATHS -- 
+preparing knn with k =  10
+total_chunks
+200
+0/200
+Preparing dataset tensor
+prepping k-NN Matrix tensor
+BUILDING TREE
+BUILDING TREE 0 / 3
+ -- BUILDING TREE WITH 0 LEVELS AND 1024 BRANCHING -- 
+BUILDING TREE 1 / 3
+ -- BUILDING TREE WITH 0 LEVELS AND 1024 BRANCHING -- 
+BUILDING TREE 2 / 3
+ -- BUILDING TREE WITH 0 LEVELS AND 1024 BRANCHING -- 
+no of parameters in one model: 288930
+training forest
+training model  0  /  3
+preparing input weights
+
+TRAINING MODEL level : 0, level index: 0 / 1
+model loadedd from file  False
+training model with 20 iters and 0.009 lr, 128 hidden params and 1024 classes
+standardizing data 
+
+[X_scaled_2] has shape : torch.Size([60000, 28, 28])
+TRAINING
+
+epoch  1  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+TRAINING
+
+epoch  2  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+TRAINING
+
+epoch  3  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+TRAINING
+
+epoch  4  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+TRAINING
+
+epoch  5  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+TRAINING
+
+epoch  6  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+TRAINING
+
+epoch  7  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+TRAINING
+
+epoch  8  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+TRAINING
+
+epoch  9  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+TRAINING
+
+epoch  10  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+TRAINING
+
+epoch  11  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+TRAINING
+
+epoch  12  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+TRAINING
+
+epoch  13  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+TRAINING
+
+epoch  14  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+TRAINING
+
+epoch  15  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+TRAINING
+
+epoch  16  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+TRAINING
+
+epoch  17  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+TRAINING
+
+epoch  18  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+TRAINING
+
+epoch  19  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+TRAINING
+
+epoch  20  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+
+
+training model  1  /  3
+preparing input weights
+model  0  /  1
+
+TRAINING MODEL level : 0, level index: 0 / 1
+model loadedd from file  False
+training model with 20 iters and 0.009 lr, 128 hidden params and 1024 classes
+standardizing data 
+
+[X_scaled_2] has shape : torch.Size([60000, 28, 28])
+TRAINING
+
+epoch  1  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+TRAINING
+
+epoch  2  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+TRAINING
+
+epoch  3  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+TRAINING
+
+epoch  4  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+TRAINING
+
+epoch  5  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+TRAINING
+
+epoch  6  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+TRAINING
+
+epoch  7  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+TRAINING
+
+epoch  8  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+TRAINING
+
+epoch  9  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+TRAINING
+
+epoch  10  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+TRAINING
+
+epoch  11  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+TRAINING
+
+epoch  12  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+TRAINING
+
+epoch  13  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+TRAINING
+
+epoch  14  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+TRAINING
+
+epoch  15  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+TRAINING
+
+epoch  16  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+TRAINING
+
+epoch  17  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+TRAINING
+
+epoch  18  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+TRAINING
+
+epoch  19  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+TRAINING
+
+epoch  20  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+
+
+training model  2  /  3
+preparing input weights
+model  0  /  2
+model  1  /  2
+
+TRAINING MODEL level : 0, level index: 0 / 1
+model loadedd from file  False
+training model with 20 iters and 0.009 lr, 128 hidden params and 1024 classes
+standardizing data 
+
+[X_scaled_2] has shape : torch.Size([60000, 28, 28])
+TRAINING
+
+epoch  1  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+TRAINING
+
+epoch  2  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+TRAINING
+
+epoch  3  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+TRAINING
+
+epoch  4  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+TRAINING
+
+epoch  5  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+TRAINING
+
+epoch  6  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+TRAINING
+
+epoch  7  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+TRAINING
+
+epoch  8  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+TRAINING
+
+epoch  9  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+TRAINING
+
+epoch  10  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+TRAINING
+
+epoch  11  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+TRAINING
+
+epoch  12  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+TRAINING
+
+epoch  13  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+TRAINING
+
+epoch  14  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+TRAINING
+
+epoch  15  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+TRAINING
+
+epoch  16  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+TRAINING
+
+epoch  17  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+TRAINING
+
+epoch  18  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+TRAINING
+
+epoch  19  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+TRAINING
+
+epoch  20  /  20
+
+b sum  tensor(0., device='cuda:0', dtype=torch.float64)
+
+
+ --- FINDING TEST ACCURACY --- 
+
+-----DOING MODEL INFERENCE ------- 
+----- MODEL INFERENCE DONE ------- 
+no of parameters in one model: 288930
+----- CALCULATING K-NN RECALL FOR EACH POINT ------- 
+1 models, 1 bins 
+
+
+mean accuracy  tensor(0.9580)
+mean candidate set size tensor(13464.7725)
+
+average query time: 0.21, standard deviation: 0.03
+1 models, 2 bins 
+
+
+mean accuracy  tensor(0.9970)
+mean candidate set size tensor(25816.2734)
+
+average query time: 0.26, standard deviation: 0.06
+1 models, 3 bins 
+
+
+mean accuracy  tensor(0.9993)
+mean candidate set size tensor(36644.7227)
+
+average query time: 0.29, standard deviation: 0.03
+1 models, 4 bins 
+
+
+mean accuracy  tensor(0.9999)
+mean candidate set size tensor(44782.9297)
+
+average query time: 0.34, standard deviation: 0.07
+1 models, 5 bins 
+
+
+mean accuracy  tensor(1.0000)
+mean candidate set size tensor(49220.7266)
+
+average query time: 0.39, standard deviation: 0.09
+1 models, 6 bins 
+
+
+mean accuracy  tensor(1.)
+mean candidate set size tensor(50555.2773)
+
+average query time: 0.41, standard deviation: 0.05
+2 models, 1 bins 
+
+
+mean accuracy  tensor(0.9991)
+mean candidate set size tensor(51943.4570)
+
+average query time: 0.22, standard deviation: 0.06
+2 models, 2 bins 
+
+
+mean accuracy  tensor(0.9994)
+mean candidate set size tensor(53641.8672)
+
+average query time: 0.26, standard deviation: 0.04
+2 models, 3 bins 
+
+
+mean accuracy  tensor(0.9994)
+mean candidate set size tensor(54691.2656)
+
+average query time: 0.30, standard deviation: 0.10
+2 models, 4 bins 
+
+
+mean accuracy  tensor(0.9994)
+mean candidate set size tensor(55122.8789)
+
+average query time: 0.35, standard deviation: 0.08
+2 models, 5 bins 
+
+
+mean accuracy  tensor(0.9994)
+mean candidate set size tensor(55416.3320)
+
+average query time: 0.38, standard deviation: 0.08
+2 models, 6 bins 
+
+
+mean accuracy  tensor(0.9994)
+mean candidate set size tensor(55753.5352)
+
+average query time: 0.41, standard deviation: 0.05
+3 models, 1 bins 
+
+
+mean accuracy  tensor(0.9993)
+mean candidate set size tensor(51969.1367)
+
+average query time: 0.21, standard deviation: 0.05
+3 models, 2 bins 
+
+
+mean accuracy  tensor(0.9996)
+mean candidate set size tensor(53685.0273)
+
+average query time: 0.28, standard deviation: 0.08
+3 models, 3 bins 
+
+
+mean accuracy  tensor(0.9996)
+mean candidate set size tensor(54727.6484)
+
+average query time: 0.30, standard deviation: 0.07
+3 models, 4 bins 
+
+
+mean accuracy  tensor(0.9997)
+mean candidate set size tensor(55146.8984)
+
+average query time: 0.34, standard deviation: 0.07
+3 models, 5 bins 
+
+
+mean accuracy  tensor(0.9997)
+mean candidate set size tensor(55436.8203)
+
+average query time: 0.37, standard deviation: 0.04
+3 models, 6 bins 
+
+
+mean accuracy  tensor(0.9997)
+mean candidate set size tensor(55773.0312)
+
+average query time: 0.41, standard deviation: 0.08
+first bin accuracy
+0.9992900490760803
+candidate_set_size of first bin on average
+51969.13671875

@@ -1,0 +1,267 @@
+/kaggle/input/neural-partitioner-dsit/main.py:173: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /usr/local/src/pytorch/torch/csrc/utils/tensor_new.cpp:245.)
+  Y = prepare.dist_rank(torch.tensor(X, dtype=float), k_train, opt=options, data=data, distance_metric = distance_metric)
+/kaggle/input/neural-partitioner-dsit/main.py:224: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  Y = torch.tensor(Y, dtype=torch.double , device=primary_device)
+['cnn', 'linear', 'neural']
+n OK training and prediction on the forest will be done using combination of selected models 
+RUNNING WITH: epochs=5; lr=0.009; n_bins=256; levels=0; branching=256; model type=None
+ -- READING PATHS -- 
+preparing knn with k =  10
+total_chunks
+200
+0/200
+Preparing dataset tensor
+prepping k-NN Matrix tensor
+BUILDING TREE
+BUILDING TREE 0 / 3
+self n class  256
+ -- BUILDING TREE WITH 0 LEVELS AND 256 BRANCHING -- 
+BUILDING TREE 1 / 3
+self n class  256
+ -- BUILDING TREE WITH 0 LEVELS AND 256 BRANCHING -- 
+BUILDING TREE 2 / 3
+self n class  256
+ -- BUILDING TREE WITH 0 LEVELS AND 256 BRANCHING -- 
+no of parameters in one model: 201745
+training forest
+training model  0  /  3
+preparing input weights
+
+TRAINING MODEL level : 0, level index: 0 / 1
+model loadedd from file  False
+training model with 5 iters and 0.009 lr, 128 hidden params and 256 classes
+standardizing data 
+TRAINING
+
+epoch  1  /  5
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  2  /  5
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  3  /  5
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  4  /  5
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  5  /  5
+
+b sum  tensor(0., device='cuda:0')
+
+
+training model  1  /  3
+preparing input weights
+model  0  /  1
+
+TRAINING MODEL level : 0, level index: 0 / 1
+model loadedd from file  False
+training model with 5 iters and 0.009 lr, 128 hidden params and 256 classes
+standardizing data 
+TRAINING
+
+epoch  1  /  5
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  2  /  5
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  3  /  5
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  4  /  5
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  5  /  5
+
+b sum  tensor(0., device='cuda:0')
+
+
+training model  2  /  3
+preparing input weights
+model  0  /  2
+model  1  /  2
+
+TRAINING MODEL level : 0, level index: 0 / 1
+model loadedd from file  False
+training model with 5 iters and 0.009 lr, 128 hidden params and 256 classes
+standardizing data 
+TRAINING
+
+epoch  1  /  5
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  2  /  5
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  3  /  5
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  4  /  5
+
+b sum  tensor(0., device='cuda:0')
+TRAINING
+
+epoch  5  /  5
+
+b sum  tensor(0., device='cuda:0')
+
+
+ --- FINDING TEST ACCURACY --- 
+
+-----DOING MODEL INFERENCE ------- 
+----- MODEL INFERENCE DONE ------- 
+no of parameters in one model: 201745
+----- CALCULATING K-NN RECALL FOR EACH POINT ------- 
+1 models, 1 bins 
+
+
+mean accuracy  tensor(0.9272)
+mean candidate set size tensor(8918.8584)
+
+average query time: 0.21, standard deviation: 0.03
+1 models, 2 bins 
+
+
+mean accuracy  tensor(0.9853)
+mean candidate set size tensor(13762.7266)
+
+average query time: 0.28, standard deviation: 0.11
+1 models, 3 bins 
+
+
+mean accuracy  tensor(0.9919)
+mean candidate set size tensor(15956.5488)
+
+average query time: 0.29, standard deviation: 0.04
+1 models, 4 bins 
+
+
+mean accuracy  tensor(0.9946)
+mean candidate set size tensor(17016.2266)
+
+average query time: 0.33, standard deviation: 0.06
+1 models, 5 bins 
+
+
+mean accuracy  tensor(0.9955)
+mean candidate set size tensor(17620.1133)
+
+average query time: 0.38, standard deviation: 0.08
+1 models, 6 bins 
+
+
+mean accuracy  tensor(0.9960)
+mean candidate set size tensor(18122.3145)
+
+average query time: 0.41, standard deviation: 0.05
+2 models, 1 bins 
+
+
+mean accuracy  tensor(0.9466)
+mean candidate set size tensor(13290.5674)
+
+average query time: 0.23, standard deviation: 0.08
+2 models, 2 bins 
+
+
+mean accuracy  tensor(0.9887)
+mean candidate set size tensor(17721.7324)
+
+average query time: 0.26, standard deviation: 0.05
+2 models, 3 bins 
+
+
+mean accuracy  tensor(0.9937)
+mean candidate set size tensor(19199.2773)
+
+average query time: 0.30, standard deviation: 0.04
+2 models, 4 bins 
+
+
+mean accuracy  tensor(0.9954)
+mean candidate set size tensor(19965.7129)
+
+average query time: 0.34, standard deviation: 0.08
+2 models, 5 bins 
+
+
+mean accuracy  tensor(0.9959)
+mean candidate set size tensor(20399.0039)
+
+average query time: 0.37, standard deviation: 0.05
+2 models, 6 bins 
+
+
+mean accuracy  tensor(0.9963)
+mean candidate set size tensor(20741.5664)
+
+average query time: 0.45, standard deviation: 0.12
+3 models, 1 bins 
+
+
+mean accuracy  tensor(0.9312)
+mean candidate set size tensor(14006.8701)
+
+average query time: 0.22, standard deviation: 0.04
+3 models, 2 bins 
+
+
+mean accuracy  tensor(0.9822)
+mean candidate set size tensor(18668.7812)
+
+average query time: 0.25, standard deviation: 0.03
+3 models, 3 bins 
+
+
+mean accuracy  tensor(0.9894)
+mean candidate set size tensor(20014.0957)
+
+average query time: 0.30, standard deviation: 0.06
+3 models, 4 bins 
+
+
+mean accuracy  tensor(0.9914)
+mean candidate set size tensor(20775.7676)
+
+average query time: 0.34, standard deviation: 0.06
+3 models, 5 bins 
+
+
+mean accuracy  tensor(0.9923)
+mean candidate set size tensor(21166.9863)
+
+average query time: 0.40, standard deviation: 0.09
+3 models, 6 bins 
+
+
+mean accuracy  tensor(0.9930)
+mean candidate set size tensor(21510.9316)
+
+average query time: 0.41, standard deviation: 0.09
+first bin accuracy
+0.9311700463294983
+candidate_set_size of first bin on average
+14006.8701171875
